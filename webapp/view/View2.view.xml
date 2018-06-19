@@ -1,0 +1,19 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="mr.sapui.SUI5-1.controller.View2">
+	<App>
+		<pages><Page title="Stranica 2">
+				<content>
+				    <Panel id="panel0" headerText="Naslov panela" expandable="true" expanded="true">
+				        <content>
+				            <sap.ui.layout:VerticalLayout xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="layout0">
+				                <sap.ui.layout:content>
+				                    <Text xmlns="sap.m" text="Tekst na drugoj stranici" id="text3" textAlign="Center"/>
+				                    <Button text="Dugme 1" width="130px" id="button1" icon="sap-icon://activate"/>
+				                </sap.ui.layout:content>
+				            </sap.ui.layout:VerticalLayout>
+				        </content>
+				    </Panel>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

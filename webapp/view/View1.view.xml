@@ -1,0 +1,30 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="mr.sapui.SUI5-1.controller.View1" displayBlock="true">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}" icon="sap-icon://accept">
+				<content>
+						<GenericTile id="tile1" header="Primer jedne akcije" press="akcija1" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout">
+							<TileContent footer="Klikni">
+								<ImageContent src="sap-icon://checklist-item"/>
+							</TileContent>
+						</GenericTile>
+						<GenericTile id="tile2" header="Primer druge akcije" press="akcija2" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout">
+							<TileContent footer="Klikni">
+								<ImageContent src="sap-icon://draw-rectangle"/>
+							</TileContent>
+						</GenericTile>
+						<GenericTile id="tile3" header="Primer trece akcije" press="akcija2" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout">
+							<TileContent footer="Klikni">
+								<ImageContent src="sap-icon://appear-offline"/>
+							</TileContent>
+						</GenericTile>
+				</content>
+				<footer>
+					<Toolbar>
+						<Text textAlign="Center" text="Naslov u dnu stranice"/>
+					</Toolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
