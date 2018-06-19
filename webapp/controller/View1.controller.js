@@ -9,6 +9,9 @@ sap.ui.define([
 		},
 		akcija2: function() {
 			MessageBox.alert("Ovo je poruka 2");
+		},
+		akcija3: function(){
+			sap.ui.core.UIComponent.getRouterFor(this).navTo("View2");
 		}
 	});
 });

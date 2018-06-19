@@ -83,6 +83,13 @@
 					"target": [
 						"TargetView1"
 					]
+				},
+				{
+					"name": "View2",
+					"pattern": "View2",
+					"target": [
+						"View2"
+					]
 				}
 			],
 			"targets": {

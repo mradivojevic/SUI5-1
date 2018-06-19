@@ -1,6 +1,7 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller"
-], function(Controller) {
+	"sap/ui/core/mvc/Controller",
+	"sap/ui/core/routing/History"
+], function(Controller, History) {
 	"use strict";
 
 	return Controller.extend("mr.sapui.SUI5-1.controller.View2", {
@@ -39,7 +40,16 @@ sap.ui.define([
 		//	onExit: function() {
 		//
 		//	}
-
+		nazad: function(){
+			var oHistory = History.getInstance();
+			var sPreviousHash = oHistory.getPreviousHash();
+			
+			if (sPreviousHash !== undefined){
+				history.go(-1);
+			} else {
+				sap.ui.core.UIComponent.getRouterFor(this).navTo("RouteView1");
+			}
+		}
 	});
 
 });
