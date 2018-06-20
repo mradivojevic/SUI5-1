@@ -1,18 +1,93 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="mr.sapui.SUI5-1.controller.View2">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="mr.sapui.SUI5-1.controller.View2">
 	<App>
-		<pages><Page title="Stranica 2">
+		<pages>
+			<Page title="Stranica 2">
 				<content>
-				    <Panel id="panel0" headerText="Naslov panela" expandable="true" expanded="true">
-				        <content>
-				            <sap.ui.layout:VerticalLayout xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="layout0">
-				                <sap.ui.layout:content>
-				                    <Text xmlns="sap.m" text="Tekst na drugoj stranici" id="text3" textAlign="Center"/>
-				                    <Button text="Nazad" width="130px" press="nazad" id="button1" icon="sap-icon://nav-back"/>
-				                </sap.ui.layout:content>
-				            </sap.ui.layout:VerticalLayout>
-				        </content>
-				    </Panel>
+					<Panel id="panel0" headerText="Naslov panela" expandable="true" expanded="true">
+						<content>
+							<sap.ui.layout:VerticalLayout xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="layout0">
+								<sap.ui.layout:content>
+									<Text xmlns="sap.m" text="Tekst na drugoj stranici" id="text3" textAlign="Center"/>
+									<core:InvisibleText text="InvisibleText" id="text4"/>
+									<sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" layout="ResponsiveGridLayout" id="form0">
+										<sap.ui.layout.form:content>
+											<core:Title text="Naslov forme" id="title0"/>
+											<Label text="Polje 1" id="label1"/>
+											<Input width="100%" id="input1"/>
+											<Input width="100%" id="input2"/>
+											<Label text="Polje 2" id="label2"/>
+											<Input width="100%" id="input3"/>
+											<Label text="Prekidac" width="100%" id="label0"/>
+											<Switch id="switch0" name="Prekidac1" customTextOn="DA" customTextOff="NE"/>
+											<Label text="Izaberite opciju" width="100%" id="label11"/>
+											<RadioButtonGroup width="100%" columns="2" selectedIndex="-1" id="group0">
+												<buttons>
+													<RadioButton selected="true" groupName="__group0" text="Opcija 1" id="button0"/>
+													<RadioButton groupName="__group0" text="Opcija 2" id="button1_1529478640565"/>
+											    </buttons>
+											</RadioButtonGroup>
+											<Label text="Datum" width="100%" id="label12"/>
+											<DatePicker
+												id="datum1"
+												models=""
+												bindingContexts=""
+												objectBindings=""
+												metadataContexts=""
+												Type=""
+												busy="false"
+												busyIndicatorDelay="1000"
+												busyIndicatorSize="Medium"
+												visible="true"
+												fieldGroupIds="[]"
+												value=""
+												width=""
+												enabled="true"
+												valueState="None"
+												name="datum1"
+												placeholder=""
+												editable="true"
+												valueStateText=""
+												showValueStateMessage="true"
+												textAlign="Initial"
+												textDirection="Inherit"
+												required="false"
+												displayFormat=""
+												valueFormat=""
+												dateValue=""
+												initialFocusedDateValue=""
+												displayFormatType=""
+												secondaryCalendarType=""
+												minDate=""
+												maxDate=""
+												ariaLabelledBy=""
+												legend=""
+												validationSuccess=""
+												validationError=""
+												parseError=""
+												formatError=""
+												modelContextChange=""
+												validateFieldGroup=""
+												change=""
+												navigate="">
+												<tooltip></tooltip><!-- sap.ui.core.TooltipBase -->
+												<customData></customData><!-- sap.ui.core.CustomData -->
+												<layoutData></layoutData><!-- sap.ui.core.LayoutData -->
+												<dependents></dependents><!-- sap.ui.core.Element -->
+												<specialDates></specialDates><!-- sap.ui.core.Element -->
+											</DatePicker>
+										</sap.ui.layout.form:content>
+									</sap.ui.layout.form:SimpleForm>
+								</sap.ui.layout:content>
+							</sap.ui.layout:VerticalLayout>
+						</content>
+					</Panel>
 				</content>
+				<footer>
+					<Toolbar>
+						<Button width="130px" press="nazad" id="button1" icon="sap-icon://nav-back"/>
+					</Toolbar>
+				</footer>
 			</Page>
 		</pages>
 	</App>

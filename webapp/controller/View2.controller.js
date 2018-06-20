@@ -11,9 +11,9 @@ sap.ui.define([
 		 * Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
 		 * @memberOf mr.sapui.SUI5-1.view.View2
 		 */
-		//	onInit: function() {
-		//
-		//	},
+			onInit: function() {
+				this._router = sap.ui.core.UIComponent.getRouterFor(this);
+			},
 
 		/**
 		 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered
@@ -41,14 +41,8 @@ sap.ui.define([
 		//
 		//	}
 		nazad: function(){
-			var oHistory = History.getInstance();
-			var sPreviousHash = oHistory.getPreviousHash();
-			
-			if (sPreviousHash !== undefined){
-				history.go(-1);
-			} else {
-				sap.ui.core.UIComponent.getRouterFor(this).navTo("RouteView1");
-			}
+				//history.go(-1);
+				this._router.navTo("RouteView1");
 		}
 	});
 

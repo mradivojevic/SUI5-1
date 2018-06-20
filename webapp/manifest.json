@@ -102,11 +102,18 @@
 					"async": true,
 					"viewPath": "mr.sapui.SUI5-1.view",
 					"controlAggregation": "pages",
-					"controlId": "idAppControl"
+					"controlId": "idAppControl",
+					"viewLevel": 1
 				},
 				"View2": {
 					"viewType": "XML",
-					"viewName": "View2"
+					"viewPath": "mr.sapui.SUI5-1.view",
+					"routerClass": "sap.m.routing.Router",
+					"transition": "slide",
+					"viewName": "View2",
+					"viewLevel": 2,
+					"controlAggregation": "pages",
+					"controlId": "idAppControl"
 				}
 			}
 		}
