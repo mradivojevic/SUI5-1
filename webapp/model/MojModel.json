@@ -5,11 +5,11 @@
 			"pod2": "podesavanje 2"
 		},
 		"stavke1": [{
-			"id": "jedan", "opis": "Opis 1"
+			"key": "jedan", "text": "Opis 1"
 		}, {
-			"id": "dva", "opis": "Opis 2"
+			"key": "dva", "text": "Opis 2"
 		}, {
-			"id": "tri", "opis": "Opis 3"
+			"key": "tri", "text": "Opis 3"
 		}]
 
 	}

@@ -1,4 +1,5 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="mr.sapui.SUI5-1.controller.View2">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="mr.sapui.SUI5-1.controller.View2">
 	<App>
 		<pages>
 			<Page title="Stranica 2">
@@ -14,7 +15,10 @@
 											<core:Title text="Naslov forme" id="title0"/>
 											<Label text="Polje 1" id="label1"/>
 											<Input width="100%" id="input1"/>
-											<Input width="100%" id="input2"/>
+											<ComboBox id="box0"
+												items = "{ path: '/MM/stavke1' }" >
+												<core:Item key="{key}" text="{text}"/>
+											</ComboBox>
 											<Label text="Polje 2" id="label2"/>
 											<Input width="100%" id="input3"/>
 											<Label text="Prekidac" width="100%" id="label0"/>
@@ -24,16 +28,24 @@
 												<buttons>
 													<RadioButton selected="true" groupName="__group0" text="Opcija 1" id="button0"/>
 													<RadioButton groupName="__group0" text="Opcija 2" id="button1_1529478640565"/>
-											    </buttons>
+												</buttons>
 											</RadioButtonGroup>
 											<Label text="Datum" width="100%" id="label12"/>
-											<DatePicker id="datum1" models="" bindingContexts="" objectBindings="" metadataContexts="" Type="" busy="false" busyIndicatorDelay="1000" busyIndicatorSize="Medium" visible="true" fieldGroupIds="[]" value="" width="" enabled="true" valueState="None" name="datum1" placeholder="" editable="true" valueStateText="" showValueStateMessage="true" textAlign="Initial" textDirection="Inherit" required="false" displayFormat="" valueFormat="" dateValue="" initialFocusedDateValue="" displayFormatType="" secondaryCalendarType="" minDate="" maxDate="" ariaLabelledBy="" legend="" validationSuccess="" validationError="" parseError="" formatError="" modelContextChange="" validateFieldGroup="" change="" navigate="">
-												<tooltip/><!-- sap.ui.core.TooltipBase -->
-												<customData/><!-- sap.ui.core.CustomData -->
-												<layoutData/><!-- sap.ui.core.LayoutData -->
-												<dependents/><!-- sap.ui.core.Element -->
-												<specialDates/><!-- sap.ui.core.Element -->
-											</DatePicker>
+											<DatePicker id="datum1" models="" bindingContexts="" objectBindings="" metadataContexts="" Type="" busy="false" busyIndicatorDelay="1000"
+												busyIndicatorSize="Medium" visible="true" fieldGroupIds="[]" value="" width="" enabled="true" valueState="None" name="datum1" placeholder=""
+												editable="true" valueStateText="" showValueStateMessage="true" textAlign="Initial" textDirection="Inherit" required="false" displayFormat=""
+												valueFormat="" dateValue="" initialFocusedDateValue="" displayFormatType="" secondaryCalendarType="" minDate="" maxDate="" ariaLabelledBy=""
+												legend="" validationSuccess="" validationError="" parseError="" formatError="" modelContextChange="" validateFieldGroup="" change=""
+												navigate="">
+												<tooltip/>
+												<!-- sap.ui.core.TooltipBase -->
+												<customData/>
+												<!-- sap.ui.core.CustomData -->
+												<layoutData/>
+												<!-- sap.ui.core.LayoutData -->
+												<dependents/>
+												<!-- sap.ui.core.Element -->
+												<specialDates/><!-- sap.ui.core.Element --></DatePicker>
 										</sap.ui.layout.form:content>
 									</sap.ui.layout.form:SimpleForm>
 								</sap.ui.layout:content>
