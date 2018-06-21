@@ -1,7 +1,8 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"sap/ui/core/routing/History"
-], function(Controller, History) {
+	"sap/ui/core/routing/History",
+	"sap/m/MessageBox"
+], function(Controller, History, MessageBox) {
 	"use strict";
 
 	return Controller.extend("mr.sapui.SUI5-1.controller.View2", {
@@ -43,6 +44,11 @@ sap.ui.define([
 		nazad: function(){
 				//history.go(-1);
 				this._router.navTo("RouteView1");
+		},
+		popup: function(){
+			var model = this.getOwnerComponent().getModel("MojModel");
+			var objm = model.getObject("/MM");
+			MessageBox.success(objm.zaglavlje.pod1);
 		}
 	});
 

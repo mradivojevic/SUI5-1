@@ -1,0 +1,17 @@
+{
+	"MM": {
+		"zaglavlje": {
+			"pod1": "podesavanje 1",
+			"pod2": "podesavanje 2"
+		},
+		"stavke1": [{
+			"id": "jedan", "opis": "Opis 1"
+		}, {
+			"id": "dva", "opis": "Opis 2"
+		}, {
+			"id": "tri", "opis": "Opis 3"
+		}]
+
+	}
+
+}
