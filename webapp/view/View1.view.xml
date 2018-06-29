@@ -18,6 +18,11 @@
 								<ImageContent src="sap-icon://appear-offline"/>
 							</TileContent>
 						</GenericTile>
+				        <GenericTile id="tile4" header="Test oData" press="akcija4" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout">
+							<TileContent footer="Klikni">
+								<ImageContent src="sap-icon://activate"/>
+							</TileContent>
+						</GenericTile>
 				</content>
 				<footer>
 					<Toolbar>
