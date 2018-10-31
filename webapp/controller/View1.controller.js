@@ -19,6 +19,9 @@ sap.ui.define([
 		},
 		akcija4: function() {
 			sap.ui.core.UIComponent.getRouterFor(this).navTo("View3");
+		},
+	    akcija5: function() {
+			sap.ui.core.UIComponent.getRouterFor(this).navTo("View4");
 		}
 	});
 });

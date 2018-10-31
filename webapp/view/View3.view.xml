@@ -3,25 +3,15 @@
 		<pages>
 			<Page title="Proba oData servisa">
 				<content>
-					
-				<sap.ui.layout.form:SimpleForm editable="true" layout="ResponsiveGridLayout" xmlns:sap.ui.layout.form="sap.ui.layout.form" id="form0">
-					
-				    <sap.ui.layout.form:content>
-					
-				        <core:Title text="Proba pozivanja oData servisa" id="title0"/>
-					
-				        <Label text="Prvi Broj" id="label0"/>
-					
-				        <Input width="100%" id="input1" maxLength="10" type="Number" value="1"/>
-					
-				        <Label text="Drugi Broj" id="label1"/>
-					
-				        <Input width="100%" id="input2" type="Number" maxLength="10" value="2"/></sap.ui.layout.form:content>
-					
-				</sap.ui.layout.form:SimpleForm>
-					
-				<Button text="Test oData" width="100px" id="v3btn1" press="akc1"/>
-					
+					<sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" layout="ResponsiveGridLayout" id="form0">
+						<sap.ui.layout.form:content>
+							<core:Title text="Proba pozivanja oData servisa" id="title0"/>
+							<Label text="Prvi Broj" id="label0"/>
+							<Input width="20%" id="input1" maxLength="10" type="Number" value="1" required="true" tooltip="Uneti broj sa zabiranje"/>
+							<Label text="Drugi Broj" id="label1"/>
+							<Input width="20%" id="input2" type="Number" maxLength="10" value="2" required="true"/></sap.ui.layout.form:content>
+							<Button text="Test oData" width="100px" id="v3btn1" press="akc1" type="Accept"/>
+					</sap.ui.layout.form:SimpleForm>
 				</content>
 				<footer>
 					<Toolbar>

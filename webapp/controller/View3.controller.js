@@ -51,7 +51,7 @@ sap.ui.define([
 		},
 
 		pozGresk: function(oerror) {
-			MessageBox.alert(oerror);
+			MessageBox.alert(oerror.message);
 		}
 	});
 

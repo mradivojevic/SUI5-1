@@ -23,6 +23,11 @@
 								<ImageContent src="sap-icon://activate"/>
 							</TileContent>
 						</GenericTile>
+						<GenericTile id="tile5" header="oData lista" press="akcija5" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout">
+							<TileContent footer="Klikni">
+								<ImageContent src="sap-icon://activities"/>
+							</TileContent>
+						</GenericTile>
 				</content>
 				<footer>
 					<Toolbar>

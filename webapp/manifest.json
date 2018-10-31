@@ -91,6 +91,12 @@
 				"titleTarget": "",
 				"greedy": false,
 				"target": ["View3"]
+			}, {
+				"name": "View4",
+				"pattern": "View4",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["View4"]
 			}],
 			"targets": {
 				"TargetView1": {
@@ -120,7 +126,19 @@
 				"View3": {
 					"viewType": "XML",
 					"viewLevel": 2,
-					"viewName": "View3"
+					"viewName": "View3",
+					"routerClass": "sap.m.routing.Router",
+					"async": true,
+					"viewPath": "mr.sapui.SUI5-1.view",
+					"controlAggregation": "pages",
+					"controlId": "idAppControl",
+					"clearControlAggregation": false
+				},
+				"View4": {
+					"viewType": "XML",
+					"viewName": "View4",
+					"viewLevel": 2,
+					"viewPath": "mr.sapui.SUI5-1.view"
 				}
 			}
 		}
